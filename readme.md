@@ -1,9 +1,19 @@
-#RESPONSIVE LANDING PAGE
+# RESPONSIVE LANDING PAGE
 
-**Tools used**
+A mobile-first responsive landing page, created using modern web technologies like -
+    - Html
+    - CSS
+    - Javascript
+    - TailwindCSS
+    - ViteJS
 
-- Html
-- CSS
-- Javascript
-- Vite
-- TailwindCss
+## Demo- https://coinfalconresponsivelandingpage.netlify.app/
+
+## Installation
+
+Install with npm
+
+```bash
+  npm install 
+```
+    
