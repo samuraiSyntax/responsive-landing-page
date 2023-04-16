@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coinfalcon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-[999] py-5 px-6 md:px-24 bg-white">
+      <nav class="flex items-center justify-between">
+        <a href="#hero" class="text-primary text-2xl md:text-3xl"
+          >Pineapple <br />Island</a
+        >
+
+        <!-- nav menu -->
+        <ul class="hidden md:flex items-center gap-20">
+          <li class="opacity-75 hover:opacity-100 transition-opacity">
+            <a href="#about">About Us</a>
+          </li>
+          <li class="opacity-75 hover:opacity-100 transition-opacity">
+            <a href="#what-we-do">What do we do</a>
+          </li>
+          <li class="opacity-75 hover:opacity-100 transition-opacity">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+
+        <!-- mobile menu -->
+        <ul
+          class="bg-white absolute top-[7.2rem] right-[-10000px] w-full p-4 text-right md:hidden z-40"
+          id="mobile-menu"
+        >
+          <li
+            class="opacity-75 hover:opacity-100 transition-opacity mb-4 links"
+          >
+            <a href="#about">About Us</a>
+          </li>
+          <li
+            class="opacity-75 hover:opacity-100 transition-opacity mb-4 links"
+          >
+            <a href="#what-we-do">What do we do</a>
+          </li>
+          <li
+            class="opacity-75 hover:opacity-100 transition-opacity mb-4 links"
+          >
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+
+        <!-- nav button -->
+        <button class="py-3 px-4 hover:bg-[#1c326e] hidden md:block">
+          <a href="#">Get In Touch</a>
+        </button>
+
+        <!-- menu icon -->
+        <div class="md:hidden flex flex-col items-end cursor-pointer" id="icon">
+          <span class="w-8 h-1 bg-slate-500 mb-1" id="menu-span"></span>
+          <span class="w-7 h-1 bg-slate-500 mb-1" id="menu-span"></span>
+          <span class="w-8 h-1 bg-slate-500 mb-1" id="menu-span"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!--  MAIN SECTION -->
+    <main class="mt-2 mb-3 md:p-0 px-3">
+      <!-- hero section -->
+      <section
+        id="hero"
+        class="w-full flex items-center justify-center md:justify-end md:mb-64 mb-20 relative text-center scroll-m-32"
+      >
+        <div
+          class="md:bg-primary text-white md:w-[35%] md:h-[380px] md:py-20 md:px-7 absolute md:left-24 md:top-28 flex flex-col z-20"
+        >
+          <h1 class="md:text-5xl mb-6 text-2xl font-bold">
+            Pineapple Island: GenZ and Millenial Abode
+          </h1>
+          <p class="md:text-xl text-base">
+            a community that gives you a taste of happiness, a place you’ll love
+            to live and an opportunity to build a home.
+          </p>
+        </div>
+        <div class="w-full md:w-3/4 h-[600px]">
+          <img src="./public/hero-main.png" alt="image of a house" />
+          <div
+            class="absolute top-0 left-0 bg-black/40 w-full h-full md:hidden"
+          ></div>
+        </div>
+      </section>
+
+      <!-- about us section -->
+      <section
+        id="about"
+        class="md:px-24 flex md:flex-row items-center justify-between flex-col md:mb-64 mb-20 scroll-m-40"
+      >
+        <h2
+          class="text-primary md:text-6xl font-bold md:w-2/12 md:leading-[86px] text-4xl text-center mb-6"
+        >
+          About <br class="md:hidden" />
+          Pineapple Island
+        </h2>
+
+        <div class="md:w-3/4 md:flex md:flex-row relative w-full max-h-[450px]">
+          <div class="h-[450px] flex-1 relative">
+            <img src="/public/img-2.png" alt="image of a house" />
+
+            <div
+              class="w-full h-full bg-black/40 absolute top-0 left-0 md:hidden"
+            ></div>
+          </div>
+          <div
+            class="bg-primary text-white p-6 w-3/12 max-h-full md:flex items-center justify-center hidden text-[max(1rem,.85rem)]"
+          >
+            <p class="md:text-base">
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </p>
+          </div>
+
+          <!-- mobile -->
+          <div
+            class="flex items-center justify-center absolute top-0 left-0 h-full p-6 break-words md:hidden"
+          >
+            <p class="text-white text-[max(1rem,.85rem)] font-semibold">
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us section -->
+      <section
+        id="why-choose-us"
+        class="md:bg-primary md:text-white text-primary md:px-24 py-16 flex md:flex-row flex-col items-center justify-between gap-8 text-center md:mb-12 mb-9"
+      >
+        <h2 class="md:text-5xl md:leading-[70px] md:w-3/12 text-3xl">
+          Why Choose Pineapple Island
+        </h2>
+
+        <div
+          class="w-full md:flex-1 flex items-center justify-center md:flex-row flex-col"
+        >
+          <div
+            class="bg-white text-primary text-base p-8 max-w-[30%] h-[450px] md:flex items-center justify-center hidden"
+          >
+            <p class="text-[max(1rem,.85rem)]">
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </p>
+          </div>
+
+          <!-- mobile -->
+          <div class="text-primary text-base break-words w-full mb-7 md:hidden">
+            <p class="text-[max(1rem,.85rem)]">
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </p>
+          </div>
+          <div class="w-full md:h-[450px] md:w-[calc(100%-1rem)]">
+            <img src="/public/mobile-img-3.png" alt="image of interior" />
+          </div>
+        </div>
+      </section>
+
+      <!-- what do we do section -->
+      <section
+        id="what-we-do"
+        class="flex flex-col items-center gap-14 py-8 md:px-24 scroll-m-20 mb-[15rem]"
+      >
+        <h2 class="font-bold text-primary md:text-4xl text-3xl text-center">
+          What Pineapple Island Offers
+        </h2>
+        <div class="w-full md:flex flex-col gap-10">
+          <div class="flex items-center justify-between relative">
+            <div class="w-full">
+              <div class="md:h-[400px] md:w-[400px] w-full">
+                <img src="/public/mobile-img-4.png" alt="image of a house" />
+              </div>
+              <div
+                class="bg-primary w-[200px] h-3/4 absolute top-16 -right-36 -z-30 hidden md:block"
+              ></div>
+
+              <!-- mobile -->
+              <div
+                class="md:hidden bg-primary w-[calc(100%-1.5rem)] absolute bottom-[-12rem] left-1/2 translate-x-[-50%]"
+              >
+                <img src="/public/mobile-offers.png" alt="offers" />
+              </div>
+            </div>
+            <div class="md:flex items-center justify-evenly w-3/5 hidden">
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/tree-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/wifi-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/money-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="md:flex flex-row-reverse items-center justify-between w-full hidden"
+          >
+            <div class="relative">
+              <div class="md:h-[400px] md:w-[400px]">
+                <img src="/public/image-5.png" alt="image of a house" />
+              </div>
+              <div
+                class="bg-primary w-[200px] h-3/4 absolute top-16 -left-36 -z-30 hidden md:block"
+              ></div>
+            </div>
+            <div class="flex items-center justify-evenly w-3/5">
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/service-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/security-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+              <div class="w-[110px] h-[140px]">
+                <img
+                  src="/public/bulb-logo.png"
+                  alt=""
+                  class="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery section -->
+      <section
+        class="md:px-24 text-center flex flex-col items-center justify-center md:mb-36 mb-16 scroll-m-32"
+        id="projects"
+      >
+        <h2 class="hidden md:block text-primary text-6xl mb-8">Galleries</h2>
+        <h2 class="md:hidden block text-primary text-6xl mb-8">
+          Available Homes
+        </h2>
+        <p class="text-xl mb-9 md:w-[45%] text-primary">
+          a community that gives you a taste of happiness, a place you’ll love
+          to live and an opportunity to build a home.
+        </p>
+
+        <div
+          class="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-4"
+          id="gallery-grid"
+        ></div>
+      </section>
+
+      <!-- Cta section -->
+      <section
+        class="md:px-24 flex items-center justify-between mb-11 md:bg-white md:text-primary bg-primary p-8"
+      >
+        <div class="flex flex-col md:w-[45%] w-full text-center md:text-left">
+          <h2
+            class="md:text-primary mb-8 md:leading-[80px] md:text-6xl capitalize text-white text-4xl"
+          >
+            Become an <br class="hidden md:block" />
+            agent
+          </h2>
+          <p class="md:text-xl mb-9 md:text-primary md:w-[60%] text-white">
+            a community that gives you a taste of happiness, a place you’ll love
+            to live and an opportunity to build a home.
+          </p>
+          <button
+            class="px-6 py-3 hover:opacity-80 transition-opacity md:w-[45%] bg-white text-primary md:bg-primary md:text-white"
+          >
+            Join Now
+          </button>
+        </div>
+        <div class="h-[490px] hidden md:block">
+          <img src="public/join.png" />
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section class="md:p-24 flex items-center justify-center flex-col">
+        <div class="text-center">
+          <h2 class="md:text-5xl text-3xl text-primary mb-6">Stay in touch</h2>
+          <p class="text-primary text-xl mb-8">
+            Are you curious about Pineapple Island? Send a message
+          </p>
+        </div>
+
+        <form
+          class="flex flex-col justify-center gap-6 md:w-[60%] w-full mb-20"
+        >
+          <input type="text" placeholder="Name" />
+          <input type="tel" placeholder="Phone No" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button class="py-3 px-7">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-primary text-white flex items-center justify-between md:px-24 py-12 md:gap-20"
+    >
+      <div class="md:flex flex-col gap-6 w-[40%] hidden">
+        <a href="#hero" class="text-xl">Pineapple Island</a>
+        <p class="text-base">
+          a community that gives you a taste of happiness, a place you’ll love
+          to live and an opportunity to build a home.
+        </p>
+      </div>
+      <div class="md:flex flex-col w-[45%] gap-4 hidden">
+        <h3 class="text-lg font-bold">Follow up</h3>
+        <p class="text-base">
+          Keep up with our newsletter to get updates about projects and offers
+        </p>
+        <div class="w-full flex items-center justify-center">
+          <input type="email" placeholder="Email" class="w-full" />
+          <button class="text-primary -ml-20 bg-transparent">Subscribe</button>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col gap-3 items-center justify-center text-center md:hidden w-full"
+      >
+        <a href="#hero" class="text-xl">Pineapple Island</a>
+        <p class="text-sm">Copyright 2021 Glowdsgn All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
